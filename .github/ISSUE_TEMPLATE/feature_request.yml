@@ -1,0 +1,69 @@
+name: Proponi una funzione
+description: Un'idea per rendere iSINAPSi PCXX1 più utile
+title: "[Idea] "
+labels: ["miglioramento"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Le idee dei tecnici che usano l'app ogni giorno sono le più preziose.
+  - type: dropdown
+    id: edizione
+    attributes:
+      label: In quale edizione
+      options:
+        - Lite
+        - Pro
+        - Entrambe
+    validations:
+      required: true
+  - type: dropdown
+    id: scheda
+    attributes:
+      label: Dove la vedresti
+      options:
+        - Pulizia / Pulizia rapida / browser
+        - Rete
+        - Sistema / Info PC
+        - Avvio e servizi
+        - Riga di comando
+        - Riparazione
+        - Windows Update
+        - Recupero
+        - Disinstalla
+        - Strumenti / ManuHelp
+        - Nuova scheda
+        - Interfaccia in generale
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Che problema risolve
+      description: "Raccontaci la situazione concreta: cosa fai oggi e cosa ti fa perdere tempo."
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Come ti immagini la funzione
+      description: Se esiste un comando Windows documentato che la realizza (netsh, PowerShell, DISM...), indicalo.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternative che usi oggi
+      description: Altri programmi o script che usi per lo stesso scopo.
+    validations:
+      required: false
+  - type: dropdown
+    id: frequenza
+    attributes:
+      label: Quanto spesso ti servirebbe
+      options:
+        - Ogni giorno
+        - Ogni settimana
+        - Ogni tanto
+    validations:
+      required: false

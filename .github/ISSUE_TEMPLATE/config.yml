@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Vulnerabilità di sicurezza
+    url: https://github.com/maloxplay/iSINAPSi-PCXX1/security/advisories/new
+    about: Segnala in privato una vulnerabilità (non aprire una issue pubblica).
+  - name: Domande e discussioni
+    url: https://github.com/maloxplay/iSINAPSi-PCXX1/discussions
+    about: Domande d'uso, consigli e idee da discutere con la community (se le Discussions sono attive).

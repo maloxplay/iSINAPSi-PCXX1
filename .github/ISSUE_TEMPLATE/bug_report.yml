@@ -1,0 +1,105 @@
+name: Segnala un problema
+description: Qualcosa non funziona come previsto in iSINAPSi PCXX1
+title: "[Bug] "
+labels: ["bug", "da verificare"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per la segnalazione! iSINAPSi PCXX1 è in beta e ogni problema segnalato ci aiuta.
+        **Attenzione alla privacy:** log e report contengono nome del PC, utente, indirizzi IP/MAC e numero di serie. Oscurali prima di incollarli. Il rapporto di errore aperto dall'app (pulsante «Segnala su GitHub») è già oscurato in automatico, ma rileggilo prima di inviare.
+        Per una vulnerabilità di sicurezza non usare questo modulo: segui SECURITY.md.
+  - type: input
+    id: versione
+    attributes:
+      label: Versione di iSINAPSi PCXX1
+      description: La trovi nel pulsante Informazioni.
+      placeholder: "es. 1.3.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: edizione
+    attributes:
+      label: Edizione
+      options:
+        - Lite installata (Setup)
+        - Lite portable
+        - Pro installata (Setup)
+        - Pro portable
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Versione di Windows
+      options:
+        - Windows 11 x64
+        - Windows 10 x64
+        - Windows 10 x86 (32 bit)
+        - Altro (specificare nella descrizione)
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Versione e build di Windows
+      description: "Da Impostazioni › Sistema › Informazioni, oppure comando winver."
+      placeholder: "es. 24H2, build 26100.2314"
+    validations:
+      required: false
+  - type: dropdown
+    id: scheda
+    attributes:
+      label: Scheda interessata
+      multiple: true
+      options:
+        - Pulizia
+        - Rete
+        - Sistema
+        - Avvio e servizi (programmi all'avvio, servizi, salute dischi, pacchetto diagnostico)
+        - Riga di comando
+        - Riparazione
+        - Windows Update
+        - Recupero
+        - Disinstalla (disinstallazione completa, quarantena)
+        - Info PC (Lite)
+        - Pulizia rapida / browser
+        - Strumenti / ManuHelp
+        - Installazione o avvio
+        - Interfaccia in generale
+    validations:
+      required: true
+  - type: textarea
+    id: descrizione
+    attributes:
+      label: Cosa è successo
+      description: Descrivi il problema e cosa ti aspettavi.
+    validations:
+      required: true
+  - type: textarea
+    id: passaggi
+    attributes:
+      label: Passaggi per riprodurlo
+      placeholder: |
+        1. Apri la scheda ...
+        2. Premi ...
+        3. Compare ...
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Estratto del registro attività o rapporto di errore
+      description: "Pulsante \"Salva log\", file in %ProgramData%\\iSINAPSi-PCXX1-Pro\\Log (Pro), %LOCALAPPDATA%\\iSINAPSi-PCXX1-Lite\\Log (Lite) o nella cartella -Dati\\Log accanto all'exe (portable) o rapporto in ...\\Crash. Oscura i dati personali."
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: verifiche
+    attributes:
+      label: Verifiche
+      options:
+        - label: Ho scaricato il file dalla pagina Releases ufficiale.
+          required: true
+        - label: Ho oscurato eventuali dati personali (nome PC, utente, IP, numero di serie).
+          required: true
