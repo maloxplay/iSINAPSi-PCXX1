@@ -3,13 +3,13 @@
 ## Versioni supportate
 | Versione | Supportata |
 |---|---|
-| 1.4.0-beta11 (Lite e Pro, beta) | ✅ solo per test e feedback |
+| 1.4.0-beta13 (Lite e Pro, beta) | ✅ solo per test e feedback |
 | 1.3.x (Lite e Pro) | ✅ |
 | precedenti | ❌ |
 
 ## Segnalare una vulnerabilità
 **Non aprire una issue pubblica.** Usa la segnalazione privata di GitHub (scheda *Security* › *Report a vulnerability*) oppure scrivi a: **isinapsicloud@gmail.com**.
-Indica versione, edizione (Lite/Pro, installata/portable), passi per riprodurre il problema ed effetto. Rispondiamo appena possibile; è un progetto gratuito senza tempi di risposta garantiti.
+Indica versione, edizione (Lite/Pro, installata/portable), passi per riprodurre il problema ed effetto. Rispondiamo appena possibile; non ci sono tempi di risposta garantiti.
 
 ## Superfici rilevanti
 - La **Pro** gira con privilegi di amministratore. Gli script PowerShell incorporati vengono estratti in `%ProgramData%\iSINAPSi-PCXX1-Pro\bin`, una cartella con ACL riservata ad Administrators e SYSTEM, controllata prima di ogni esecuzione (anche contro junction e collegamenti); lo script estratto viene confrontato byte per byte con quello incorporato.

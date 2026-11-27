@@ -1,6 +1,15 @@
 # Changelog
 Tutte le modifiche rilevanti di iSINAPSi™ PCXX1™. Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it-IT/1.1.0/); versioni secondo [Semantic Versioning](https://semver.org/lang/it/).
 
+## [1.4.0-beta13] – 2026-11-28
+
+### Testi dell'interfaccia
+- Le parole «gratuito», «gratis» e «free» non compaiono più nell'interfaccia: sottotitolo della finestra principale («edizione Pro» / «edizione Lite»), finestra Informazioni, finestra di accettazione al primo avvio, nota dell'edizione Lite, pagina Recupero, installer e LEGGIMI. Restano solo nel testo della licenza.
+- Nessun'altra modifica funzionale rispetto alla beta12.
+
+### Test
+- 329 test automatici su Linux (nuovo test di guardia sui testi dell'interfaccia, del disclaimer, dell'installer e del LEGGIMI).
+
 ## [1.4.0-beta12] – 2026-11-28 · non pubblicata
 
 ### Licenza e modulo di autorizzazione
