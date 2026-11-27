@@ -3,6 +3,7 @@
 ## Versioni supportate
 | Versione | Supportata |
 |---|---|
+| 1.4.0-beta11 (Lite e Pro, beta) | ✅ solo per test e feedback |
 | 1.3.x (Lite e Pro) | ✅ |
 | precedenti | ❌ |
 
@@ -17,3 +18,5 @@ Indica versione, edizione (Lite/Pro, installata/portable), passi per riprodurre 
 - La **Lite** gira senza privilegi: dati per utente in `%LOCALAPPDATA%\iSINAPSi-PCXX1-Lite`.
 - ManuHelp apre soltanto una pagina web: non scarica né avvia programmi.
 - I file pubblicati **non sono firmati digitalmente**: verifica sempre le impronte in `SHA256SUMS-<versione>.txt`.
+- Il modulo di autorizzazione legge i dati del PC con WMI in sola lettura e scrive il file solo nel percorso scelto dall'utente; nessun file temporaneo, nessuna apertura automatica.
+- Le credenziali facoltative del remoting (Pro) non sono mai salvate in chiaro: Gestione credenziali di Windows / DPAPI.

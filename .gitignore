@@ -1,0 +1,26 @@
+# Compilazione e strumenti di sviluppo (il repository pubblica solo documentazione)
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+# Binari: si pubblicano come asset della release, non nel repository
+*.exe
+*.zip
+*.msi
+*.pdb
+# Dati locali e file personali
+Impostazioni.json
+Accettazione.txt
+*.log
+Log/
+Report/
+Backup/
+Crash/
+.env
+*.pfx
+*.p12
+*.key
+Thumbs.db
+.DS_Store
