@@ -1,6 +1,16 @@
 # Changelog
 Tutte le modifiche rilevanti di iSINAPSi™ PCXX1™. Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it-IT/1.1.0/); versioni secondo [Semantic Versioning](https://semver.org/lang/it/).
 
+## [1.4.0-beta12] – 2026-11-28 · non pubblicata
+
+### Licenza e modulo di autorizzazione
+- Licenza 3.0: tolta la nota «testo da far rivedere a un avvocato prima della pubblicazione» (in testa e dopo l'approvazione specifica) e, al punto 12.9, l'inciso «da sottoporre a revisione legale» riferito al modulo, dopo la verifica di un professionista sul testo pubblicato con la beta11. Nessun'altra modifica alle clausole: la versione resta 3.0 e chi l'ha già accettata non deve accettarla di nuovo.
+- Finestra del primo avvio: tolta la frase «Testo da far rivedere a un avvocato».
+- Modulo di autorizzazione all'intervento (PDF, HTML, CSV e modulo vuoto): tolta la dicitura «modello da sottoporre a revisione legale»; restano firma fissa, numero di pagina e contenuti invariati.
+
+### Test
+- 327 test automatici su Linux; i test di licenza e modulo verificano ora che le due note non compaiano più.
+
 ## [1.4.0-beta11] – 2026-11-27 · non pubblicata
 
 ### Modulo di autorizzazione all'intervento (Lite e Pro)
